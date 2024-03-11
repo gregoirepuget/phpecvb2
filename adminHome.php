@@ -30,6 +30,7 @@ if (isset($_POST['login']) &&  isset($_POST['password'])) {
     <h1>Admin</h1>
     <?php if (isset($_SESSION['id'])) {
             include('views/admin/posts.php'); 
+            include('views/admin/createUserLink.php');
             include('views/admin/disconnectLink.php'); 
         } else {
             include('views/admin/loginForm.php'); 
