@@ -1,5 +1,8 @@
 <h2>Formulaire de connexion</h2>
 <form method="post">
+    <?php if (isset($error)) {
+        echo '<p style="color:red;">L\'utilisateur n\'existe pas</p>';
+    } ?>
     <div>
         <label for="login">Login</label>
         <input type="text" id="login" name="login">
